@@ -19,9 +19,16 @@
 					<span>Software Developer</span>
 					</br>
 					<span>Dallas, TX</span>	
+					</br>
+					<div id="links-wrapper">
+						<a href="https://www.linkedin.com/in/keishimii/" target="_blank"><img class="img-link" src="linkedin.png" alt="linkedin"></a>
+						<a href="https://github.com/keishimii" target="_blank"><img class="img-link" src="github.png" alt="github"></a>
+						<a href="mailto:keishi.mii@utdallas.edu" target="_blank"><img class="img-link" src="email.png" alt="email"></a>
+					</div>
 				</div>
 			</div>	
-			<div id="profile-item-2">		
+			<div id="profile-item-2">	
+				<div id="terminal-wrapper">	
 					<div class="terminal-window">
 						<header>
 							<div class="button green"></div>
@@ -36,8 +43,21 @@
 						<span class="output">=> "B.S. Computer Science"&nbsp;</span></br></br>
 						<span class="command">$ Keishi.graduationDate&nbsp;</span></br>
 						<span class="output">=> "December 2017"&nbsp;</span></br></br>
+						<span class="command">$ Keishi.interests.current&nbsp;</span></br>
+						<span class="output">=> ["code", "data science", "running", "nature", "travel"]&nbsp;</span></br></br>
+						<span class="command">$ Keishi.workExperience.latest&nbsp;</span></br>
+						<span class="output">=> "Latest Work Experience"&nbsp;</span></br>
+						<span class="output">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;company: "Cisco Systems"</span></br>
+						<span class="output">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location: "San Jose, CA"</span></br>
+						<span class="output">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role: "Software Engineer Intern"</span></br>
+						<span class="output">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;startDate: "May 2017"</span></br>
+						<span class="output">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endDate: "August 2017"</span></br></br>
+						<span class="command">$ Keishi.resume&nbsp;</span></br>
+						<span class="output" >=> "<a target="_blank" href="keishi_mii.pdf">keishi_mii.pdf</a>"</span></br></br>
+					
 						</section>
 					</div>
+				</div>	
 			</div>
 		</div>
 		<div id="resume-wrapper">
@@ -57,6 +77,10 @@ body{
 	padding: 0;
 	margin: 0;
 }
+a{
+	color: #4DD0E1;
+}
+
 
 .img-circle {
     border-radius: 50%;
@@ -65,6 +89,13 @@ body{
 	min-height: 300px;
     height: auto;
 }
+.img-link {
+	border-radius: 50%;
+	background-color: #00BCD4;
+	height: 40px;
+    width: 40px;
+    margin: 8px;
+}
 .navbar{
 	overflow: hidden;
 	background: #ECEFF1;
@@ -72,6 +103,13 @@ body{
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 	z-index: 9999;
+}
+
+#links-wrapper{
+	display: inline;
+	width: 100%;
+	height: 10%;
+	align-items: center;
 }
 #main-wrapper{
     position: absolute;
@@ -96,8 +134,7 @@ body{
 	align-items: center;
 }
 #profile-item-2{
-	position: relative;
-	display: grid;
+	position: relative; 
 	width: 100%;
 }
 #headshot-wrapper{
@@ -142,14 +179,17 @@ body{
 
 #terminal-wrapper{
 	position: relative;
-	width: 75%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
 }
 
 .terminal-window {
 	text-align: left;
 	width: 75%;
-	height: 80%;
+	height: 100%;
 	border-radius: 10px;
 	margin: auto;
 	position: relative;
