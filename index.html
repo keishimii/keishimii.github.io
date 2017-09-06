@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Keishi Mii</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Rokkitt" rel="stylesheet">
+</head>
+<body>
+	<div id="main-wrapper">
+		<div class="navbar">
+				<div id="name">Keishi Mii</div> 
+		</div>
+		<div id="intro-wrapper">
+			<div id="profile-item-1">
+				<div id="headshot-wrapper">
+					<div id="circle">
+						<img class="img-circle" src="headshot.png"></img>	
+					</div>
+					<span>Software Developer</span>
+					</br>
+					<span>Dallas, TX</span>	
+				</div>
+			</div>	
+			<div id="profile-item-2">		
+					<div class="terminal-window">
+						<header>
+							<div class="button green"></div>
+							<div class="button yellow"></div>
+							<div class="button red"></div>
+						</header>
+						<section class="terminal">
+						<span class="command">$ Hello, World! I'm a Software Developer.&nbsp;</span></br></br>
+						<span class="command">$ Keishi.education&nbsp;</span></br>
+						<span class="output">=> "University of Texas at Dallas"&nbsp;</span></br></br>
+						<span class="command">$ Keishi.degree&nbsp;</span></br>
+						<span class="output">=> "B.S. Computer Science"&nbsp;</span></br></br>
+						<span class="command">$ Keishi.graduationDate&nbsp;</span></br>
+						<span class="output">=> "December 2017"&nbsp;</span></br></br>
+						</section>
+					</div>
+			</div>
+		</div>
+		<div id="resume-wrapper">
+				hello
+		</div>
+	</div>
+</body>
+
+<footer>
+
+</footer>
+</html>
+
+<style>
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.img-circle {
+    border-radius: 50%;
+	width: 30%;
+	min-width: 300px; 
+	min-height: 300px;
+    height: auto;
+}
+.navbar{
+	overflow: hidden;
+	background: #ECEFF1;
+	position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+	z-index: 9999;
+}
+#main-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+	margin-top: 45px;
+	/* background: #00BCD4; */
+	/* 039BE5 | 00AA8D*/
+}
+#intro-wrapper{
+	display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+	background: #00BCD4;
+}
+#profile-item-1{
+	background: #607D8B;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+#profile-item-2{
+	position: relative;
+	display: grid;
+	width: 100%;
+}
+#headshot-wrapper{
+	width: 30%;
+	min-width: 300px; 
+    height: auto;
+	text-align: center;
+	font-size: 1.2em;
+	color: #ECEFF1;
+	font-family: 'Montserrat', sans-serif;
+}
+#headshot-details-wrapper{
+	text-align: center;
+	font-size: 1.2em;
+	color: #ECEFF1;
+	font-family: 'Montserrat', sans-serif;
+}
+#circle {
+    background: #00BCD4;
+    border-radius: 50%;
+	width: 40%;
+	min-width: 320px; 
+	min-height: 320px;
+	height: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	margin-bottom: 4%;
+}
+#name{
+	line-height: 150%;
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Rokkitt', serif;
+}
+
+#resume-wrapper{
+	position: relative;
+	height: 500px;
+	width: 100%;
+}
+
+#terminal-wrapper{
+	position: relative;
+	width: 75%;
+	height: 80%;
+}
+
+.terminal-window {
+	text-align: left;
+	width: 75%;
+	height: 80%;
+	border-radius: 10px;
+	margin: auto;
+	position: relative;
+}
+
+.terminal-window header {
+	background: #E0E8F0;
+	height: 30px;
+	border-radius: 8px 8px 0 0;
+	padding-left: 10px;
+}
+
+.terminal-window header .button {
+	width: 12px;
+	height: 12px;
+	margin: 10px 4px 0 0;
+	display: inline-block;
+	border-radius: 8px;
+}
+
+.terminal-window header .button.green {
+	background: #3BB662;
+}
+
+.terminal-window header .button.yellow {
+	background: #E5C30F;
+}
+
+.terminal-window header .button.red {
+	background: #E75448;
+}
+
+.terminal-window section.terminal {
+	font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+	font-size: 11pt;
+	background: #30353A;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	overflow: auto;
+	border-radius: 0 0 8px 8px;
+}
+
+#symbol {
+	color: white;
+	padding-left: 10px;
+}
+
+.terminal-window section.terminal .command {
+	content: "$";
+	color: white;
+	padding-left: 15px;
+	display: inline-block;
+}
+
+.terminal-window section.terminal .output {
+	color: #CFD8DC;
+	padding-left: 20px;
+}
+</style>
