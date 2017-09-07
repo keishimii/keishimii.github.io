@@ -9,6 +9,8 @@ a{
 	color: #4DD0E1;
 }
 
+/* ------- Classes ------- */
+
 .footer{
 	background-color: #455A64;
 	line-height: 80px;
@@ -18,9 +20,7 @@ a{
 	font-size: 1em;
 	color: white;
 }
-.italic{
-	font-style: italic;
-}
+
 .img-circle {
     border-radius: 50%;
 	width: 30%;
@@ -59,80 +59,7 @@ a{
 	margin: 0 auto;
 }
 
-#links-wrapper{
-	display: inline;
-	width: 100%;
-	height: 10%;
-	align-items: center;
-}
-#main-wrapper{
-    position: absolute;
-    width: 100%;
-    height: 95%;
-	margin-top: 45px;
-}
-
-#intro-wrapper{
-	display: grid;
-    grid-template-columns: 50% 50%;
-    position: relative;
-    width: 100%;
-    height: 100%;
-	background: #00BCD4;
-}
-#profile-item-1{
-	background: #607D8B;
-	display: grid;
-	justify-items: center;
-	align-items: center;
-}
-#profile-item-2{
-	position: relative; 
-	width: 100%;
-}
-#headshot-wrapper{
-	width: 30%;
-	min-width: 300px; 
-    height: auto;
-	text-align: center;
-	font-size: 1.2em;
-	color: #ECEFF1;
-	font-family: 'Montserrat', sans-serif;
-}
-#headshot-details-wrapper{
-	text-align: center;
-	font-size: 1.2em;
-	color: #ECEFF1;
-	font-family: 'Montserrat', sans-serif;
-}
-#circle {
-    background: #00BCD4;
-    border-radius: 50%;
-	width: 40%;
-	min-width: 320px; 
-	min-height: 320px;
-	height: 100%;
-	display: grid;
-	justify-items: center;
-	align-items: center;
-	margin-bottom: 4%;
-}
-#name{
-	line-height: 150%;
-	font-size: 2em;
-	text-align: center;
-	font-family: 'Rokkitt', serif;
-}
-
-#resume-wrapper{
-	position: relative;
-	background-color: #D6D6CF;
-	color: #3e3e3d;
-	display: grid;
-	grid-template-columns: 18% 64% 18%;
-	padding-bottom: 4%;
-}
-#resume-main-section{
+.resume-main-section{
 	text-align: center;
 	vertical-align: center;
 	padding-top: 10px;
@@ -141,49 +68,30 @@ a{
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
-#resume-left-border{
+.resume-left-border{
 	padding-top: 1%;
 	padding-bottom: 1%;
 	vertical-align: center;
 	margin-top: 5%;
 }
-#resume-section-title{
+.resume-section-title{
 	text-align: left;
 	font-size: 1.2em;
 	margin-top: 15px;
 	font-family: 'Rokkitt', serif;
 }
-#resume-header{
-	font-style: italic;
-	font-size: 1.6em;
-	font-family: 'Rokkitt', serif;
-	padding-top: 20px;
-}
-#resume-content{
+.resume-content{
 	display: grid;
 	grid-template-columns: 60% 40%;
 	vertical-align: center;
 	margin: 2%;
 }
-#resume-content-left{
+.resume-content-left{
 	text-align: left;
 }
-#resume-content-right{
+.resume-content-right{
 	text-align: right;
-}
-
-#resume-skill-wrapper{
-	display: grid;
-	grid-template-columns: 30% 70%;
-	margin-left: 2%;
-	padding-bottom: 10px;
-}
-
-#terminal-wrapper{
-	position: relative;
-	width: 100%;
-	height: 75%;
-	padding-top: 10%;
+	font-style: italic;
 }
 
 .terminal-window {
@@ -236,13 +144,7 @@ a{
 	border-radius: 0 0 8px 8px;
 }
 
-#symbol {
-	color: white;
-	padding-left: 10px;
-}
-
 .terminal-window section.terminal .command {
-	content: "$";
 	color: white;
 	padding-left: 15px;
 	display: inline-block;
@@ -251,4 +153,93 @@ a{
 .terminal-window section.terminal .output {
 	color: #CFD8DC;
 	padding-left: 20px;
+}
+/* ------- ID's ------- */
+
+#main-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+	margin-top: 45px;
+}
+#links-wrapper{
+	display: inline;
+	align-items: center;
+}
+#intro-wrapper{
+	display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+	background: #00BCD4;
+}
+#profile-item-1{
+	background: #607D8B;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+#profile-item-2{
+	position: relative; 
+	width: 100%;
+}
+#headshot-wrapper{
+	width: 30%;
+	min-width: 300px; 
+    height: auto;
+	text-align: center;
+	font-size: 1.2em;
+	color: #ECEFF1;
+	font-family: 'Montserrat', sans-serif;
+}
+#headshot-details-wrapper{
+	text-align: center;
+	font-size: 1.2em;
+	color: #ECEFF1;
+	font-family: 'Montserrat', sans-serif;
+}
+#circle {
+    background: #00BCD4;
+    border-radius: 50%;
+	width: 40%;
+	min-width: 320px; 
+	min-height: 320px;
+	height: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	margin-bottom: 4%;
+}
+#name{
+	line-height: 150%;
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Rokkitt', serif;
+}
+#resume-wrapper{
+	position: relative;
+	background-color: #D6D6CF;
+	color: #3e3e3d;
+	display: grid;
+	grid-template-columns: 18% 64% 18%;
+	padding-bottom: 4%;
+}
+#resume-header{
+	font-style: italic;
+	font-size: 1.6em;
+	font-family: 'Rokkitt', serif;
+	padding-top: 20px;
+}
+#resume-skill-wrapper{
+	display: grid;
+	grid-template-columns: 30% 70%;
+	margin-left: 2%;
+	padding-bottom: 10px;
+}
+#terminal-wrapper{
+	position: relative;
+	width: 100%;
+	height: 75%;
+	padding-top: 10%;
 }
