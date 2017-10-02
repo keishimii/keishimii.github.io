@@ -28,6 +28,7 @@ a{
 	min-height: 300px;
     height: auto;
 }
+
 .img-link {
 	border-radius: 50%;
 	background-color: #00BCD4;
@@ -35,6 +36,7 @@ a{
     width: 40px;
     margin: 8px;
 }
+
 .img-resume {
 	width: 30%;
 	min-width: 60px;
@@ -43,6 +45,7 @@ a{
 	float: right;
 	padding-top: 10px;
 }
+
 .navbar{
 	overflow: hidden;
 	background-color: #ECEFF1;
@@ -68,27 +71,32 @@ a{
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
+
 .resume-left-border{
 	padding-top: 1%;
 	padding-bottom: 1%;
 	vertical-align: center;
 	margin-top: 5%;
 }
+
 .resume-section-title{
 	text-align: left;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	margin-top: 15px;
 	font-family: 'Rokkitt', serif;
 }
+
 .resume-content{
 	display: grid;
 	grid-template-columns: 60% 40%;
 	vertical-align: center;
 	margin: 2%;
 }
+
 .resume-content-left{
 	text-align: left;
 }
+
 .resume-content-right{
 	text-align: right;
 	font-style: italic;
@@ -146,14 +154,16 @@ a{
 
 .terminal-window section.terminal .command {
 	color: white;
-	padding-left: 15px;
+	margin-left: 15px;
 	display: inline-block;
 }
 
 .terminal-window section.terminal .output {
 	color: #CFD8DC;
 	padding-left: 20px;
+	display: inline-block;
 }
+
 /* ------- ID's ------- */
 
 #main-wrapper{
@@ -172,15 +182,16 @@ a{
     position: relative;
     width: 100%;
     height: 100%;
-	background: #00BCD4;
 }
 #profile-item-1{
 	background: #607D8B;
 	display: grid;
 	justify-items: center;
 	align-items: center;
+	width: 100%;
 }
 #profile-item-2{
+	background: #00BCD4;
 	position: relative; 
 	width: 100%;
 }
@@ -227,7 +238,7 @@ a{
 }
 #resume-header{
 	font-style: italic;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	font-family: 'Rokkitt', serif;
 	padding-top: 20px;
 }
@@ -242,4 +253,60 @@ a{
 	width: 100%;
 	height: 75%;
 	padding-top: 10%;
+}
+
+/* ------- media queries ------- */
+
+
+@media only screen and (max-width: 320px) {
+	#headshot-wrapper{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	#headshot-wrapper{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+
+}
+
+@media only screen and (max-width: 515px) {
+	.terminal-window section.terminal {
+		font-size: 0.8em;
+	}
+	#headshot-wrapper{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#resume-wrapper{
+		grid-template-columns: 18% 77% 5%;
+		font-size: 1em;
+	}
+	#resume-skill-wrapper{
+		display: inline;
+		margin-left: 2%;
+		padding-bottom: 0;
+	}
+} 
+
+@media only screen and (max-width: 1024px){
+	#intro-wrapper{
+		display: inline;
+	}
+	#profile-item-1{
+		height: 100%;
+	}
+	#profile-item-2{
+		height: 100%;
+	}
+
+	.resume-main-section{
+		font-size: 1.1em;
+	}
 }
