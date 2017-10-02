@@ -257,29 +257,13 @@ a{
 
 /* ------- media queries ------- */
 
-
-@media only screen and (max-width: 320px) {
-	#headshot-wrapper{
-		width: 50%;
-	}
-}
-
-@media only screen and (max-width: 375px) {
-	#headshot-wrapper{
-		width: 50%;
-	}
-}
-
-@media only screen and (max-width: 425px) {
-
-}
-
 @media only screen and (max-width: 515px) {
 	.terminal-window section.terminal {
 		font-size: 0.8em;
 	}
+	
 	#headshot-wrapper{
-		width: 80%;
+		min-width: 250px;
 	}
 }
 
